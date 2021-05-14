@@ -23,11 +23,11 @@ const useGraphqlApi = (baseUri?: string, isMulti?: false) => {
   const execute = useCallback(async ({ uri, gql, key }: Iexecute) => {
     try {
       setLoading(true)
-      const url = baseUri || uri || ''
-      const data = await fetcher(url, gql)
+      const url = baseUri || uri || ''  
+      const data = await fetcher(url, gql)  
       if (!isMulti) setResult(data)
 
-      setResult((prevState) => ({ ...prevState, [key as string]: data }))
+      setResult((prevState) => ({ ...prevState, [key as  string]: data }))
     } catch (e) {
       setError(e)
     }
