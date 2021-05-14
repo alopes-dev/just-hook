@@ -1,10 +1,13 @@
 import React from 'react'
 
-import { ExampleComponent } from 'just-hook'
+import { useLocalStorage } from 'just-hook'
 import 'just-hook/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const [data, set, remove] = useLocalStorage('keys', 'antonioLopes')
+
+  console.log(data, set, remove)
+  return <h1>Antonio Lopes</h1>
 }
 
 export default App

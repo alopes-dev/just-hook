@@ -13,19 +13,23 @@ npm install --save just-hook
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'just-hook'
+import { useLocalStorage } from 'just-hook'
 import 'just-hook/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  const [data, set, remove] = useLocalStorage('keys', 'antonioLopes')
+
+  console.log(data, set, remove)
+  return <h1>Antonio Lopes</h1>
 }
+
+export default App
 ```
 
 ## License
 
 MIT © [Antonio Lopes](https://github.com/Antonio Lopes)
+
 # just-hook
