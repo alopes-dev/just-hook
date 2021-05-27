@@ -1,6 +1,6 @@
 {
   "name": "just-hook",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "awesome react hooks",
   "author": "adilsonLopesDev",
   "main": "dist/index.js",
