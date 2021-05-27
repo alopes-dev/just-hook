@@ -30,6 +30,6 @@ export default App
 
 ## License
 
-MIT © [Antonio Lopes](https://github.com/Antonio Lopes)
+MIT © [Antonio Lopes](https://github.com/adilsonlopesdev)
 
 # just-hook
